@@ -1,0 +1,171 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="_Rr5JB3YtHAc0KMlbA3A">
+    <mxGraphModel dx="2730" dy="1126" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="StartNode" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#202020;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="485" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Receive" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;fontStyle=0;" value="Receive checkout request&#xa;(card + copy barcode)" vertex="1">
+          <mxGeometry height="60" width="180" x="410" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Eligible" parent="1" style="shape=hexagon;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=12;" value="Borrower eligible?&#xa;[no unpaid fine, active account]" vertex="1">
+          <mxGeometry height="60" width="240" x="380" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Refusal" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Display refusal reason&#xa;and amount owed" vertex="1">
+          <mxGeometry height="60" width="160" x="720" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="End_Refusal" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#202020;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="785" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="End_Refusal_Inner" parent="End_Refusal" style="ellipse;whiteSpace=wrap;html=1;fillColor=#202020;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="5" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="D_Available" parent="1" style="shape=hexagon;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=12;" value="Copy available for checkout?&#xa;[not on hold for another borrower]" vertex="1">
+          <mxGeometry height="60" width="260" x="180" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Reserved" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Display &quot;copy reserved&quot;&#xa;message" vertex="1">
+          <mxGeometry height="60" width="160" x="450" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="End_Reserved" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#202020;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="515" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="End_Reserved_Inner" parent="End_Reserved" style="ellipse;whiteSpace=wrap;html=1;fillColor=#202020;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="5" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Determine" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Determine due date from&#xa;loan policy and category" vertex="1">
+          <mxGeometry height="60" width="160" x="90" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="Fork_Bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#4D4D4D;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="8" width="320" x="40" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Record" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Record the loan" vertex="1">
+          <mxGeometry height="50" width="120" x="60" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="A_SetStatus" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Set the copy status&#xa;to on loan" vertex="1">
+          <mxGeometry height="50" width="130" x="210" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="Join_Bar" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#4D4D4D;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="8" width="320" x="40" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="D_OnHold" parent="1" style="shape=hexagon;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;fontSize=12;" value="Copy was on hold&#xa;for this borrower?" vertex="1">
+          <mxGeometry height="50" width="180" x="110" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Mark" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Mark the reservation fulfilled" vertex="1">
+          <mxGeometry height="50" width="200" x="100" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="Merge_Node" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFE6CC;strokeColor=#D79B00;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="185" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="A_Confirm" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Display confirmation&#xa;with due date" vertex="1">
+          <mxGeometry height="60" width="150" x="125" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="End_Success" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#202020;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="185" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="End_Success_Inner" parent="End_Success" style="ellipse;whiteSpace=wrap;html=1;fillColor=#202020;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="5" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="StartNode" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;" target="A_Receive">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="A_Receive" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;" target="D_Eligible">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="D_Eligible" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;fontSize=12;" target="A_Refusal" value="no">
+          <mxGeometry relative="1" x="-0.65" y="15" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="A_Refusal" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;" target="End_Refusal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="D_Eligible" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;fontSize=12;" target="D_Available" value="yes">
+          <mxGeometry relative="1" x="-0.5" y="-15" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="D_Available" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;fontSize=12;" target="A_Reserved" value="no">
+          <mxGeometry relative="1" x="-0.4" y="15" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="A_Reserved" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;" target="End_Reserved">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="D_Available" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;fontSize=12;" target="A_Determine" value="yes">
+          <mxGeometry relative="1" x="-0.4" y="-15" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="A_Determine" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;" target="Fork_Bar">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="480" />
+              <mxPoint x="200" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="Fork_Bar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;" target="A_Record">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="Fork_Bar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;" target="A_SetStatus">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="275" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="A_Record" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;" target="Join_Bar">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="120" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="A_SetStatus" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;" target="Join_Bar">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="275" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="Join_Bar" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;" target="D_OnHold">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="D_OnHold" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;fontSize=12;" target="A_Mark" value="yes">
+          <mxGeometry relative="1" x="-0.3" y="10" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="A_Mark" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;" target="Merge_Node">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="D_OnHold" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;html=1;strokeColor=#444444;endArrow=block;endFill=1;fontSize=12;" target="Merge_Node" value="no">
+          <mxGeometry relative="1" x="-0.8" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="320" y="705" />
+              <mxPoint x="320" y="875" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="Merge_Node" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;" target="A_Confirm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="A_Confirm" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=1;html=1;strokeColor=#444444;endArrow=block;endFill=1;" target="End_Success">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

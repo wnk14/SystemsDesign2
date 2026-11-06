@@ -1,0 +1,462 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="jVFNdo0OsguMeZc6tRkZ">
+    <mxGraphModel dx="3535" dy="1858" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Pool_Librarian" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=30;fillColor=#E8F5E9;strokeColor=#333333;fontStyle=1;fontSize=14;" value="Librarian" vertex="1">
+          <mxGeometry height="240" width="2560" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Pool_System" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=30;fillColor=#F3E5F5;strokeColor=#333333;fontStyle=1;fontSize=14;" value="Library System" vertex="1">
+          <mxGeometry height="360" width="2560" x="40" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="Pool_Borrower" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=30;fillColor=#FFF3E0;strokeColor=#333333;fontStyle=1;fontSize=14;" value="Borrower" vertex="1">
+          <mxGeometry height="260" width="2560" x="40" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="Pool_Payment" parent="1" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=30;fillColor=#E3F2FD;strokeColor=#333333;fontStyle=1;fontSize=14;" value="Payment Gateway" vertex="1">
+          <mxGeometry height="200" width="2560" x="40" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="L_S1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=standard;symbol=general;strokeWidth=1.5;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="120" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="L_T1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Scan the&#xa;copy barcode" vertex="1">
+          <mxGeometry height="60" width="100" x="180" y="125" as="geometry" />
+        </mxCell>
+        <mxCell id="L_EBG" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=standard;symbol=event;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="360" y="135" as="geometry" />
+        </mxCell>
+        <mxCell id="L_C1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=catch;symbol=message;" value="Receive &#39;no active&#xa;loan&#39; message" vertex="1">
+          <mxGeometry height="40" width="40" x="560" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="L_E1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=end;symbol=general;strokeWidth=3;" value="End" vertex="1">
+          <mxGeometry height="40" width="40" x="660" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="L_C2" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=catch;symbol=message;" value="Receive &#39;return&#xa;confirmation&#39;" vertex="1">
+          <mxGeometry height="40" width="40" x="1310" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="L_E2" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=end;symbol=general;strokeWidth=3;" value="End" vertex="1">
+          <mxGeometry height="40" width="40" x="1410" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="L_C4" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=catch;symbol=message;" value="Receive &#39;return&#xa;confirmation&#39;" vertex="1">
+          <mxGeometry height="40" width="40" x="1980" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="L_E4" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=end;symbol=general;strokeWidth=3;" value="End" vertex="1">
+          <mxGeometry height="40" width="40" x="2080" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="L_C3" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=catch;symbol=message;" value="Receive &#39;return&#xa;confirmation&#39;" vertex="1">
+          <mxGeometry height="40" width="40" x="2410" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="L_E3" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=end;symbol=general;strokeWidth=3;" value="End" vertex="1">
+          <mxGeometry height="40" width="40" x="2510" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="S_S1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=standard;symbol=message;strokeWidth=1.5;" value="Barcode&#xa;scanned" vertex="1">
+          <mxGeometry height="40" width="40" x="230" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="S_G1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=standard;symbol=exclusive;" value="Open loan&#xa;found?" vertex="1">
+          <mxGeometry height="40" width="40" x="310" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="S_T1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Record unmatched&#xa;scan" vertex="1">
+          <mxGeometry height="60" width="100" x="400" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="S_Th1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=throw;symbol=message;" value="Send &#39;no active&#xa;loan&#39;" vertex="1">
+          <mxGeometry height="40" width="40" x="560" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="S_E1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=end;symbol=general;strokeWidth=3;" value="End" vertex="1">
+          <mxGeometry height="40" width="40" x="640" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="S_T2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Close loan &amp;&#xa;record return" vertex="1">
+          <mxGeometry height="60" width="100" x="400" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="S_F1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=standard;symbol=parallel;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="540" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="S_T3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Check reservation&#xa;queue" vertex="1">
+          <mxGeometry height="60" width="110" x="620" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="S_T4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Set copy status&#xa;to available" vertex="1">
+          <mxGeometry height="60" width="110" x="620" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="S_F2" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=standard;symbol=parallel;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="770" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="S_G2" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=standard;symbol=exclusive;" value="Reservation queue&#xa;not empty?" vertex="1">
+          <mxGeometry height="40" width="40" x="850" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="S_T5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Set copy on hold&#xa;for next borrower" vertex="1">
+          <mxGeometry height="60" width="120" x="950" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="S_Th2" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=throw;symbol=message;" value="Send hold&#xa;notification" vertex="1">
+          <mxGeometry height="40" width="40" x="1110" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="S_G3" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=standard;symbol=exclusive;" value="Returned after&#xa;due date?" vertex="1">
+          <mxGeometry height="40" width="40" x="1210" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="S_Th3" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=throw;symbol=message;" value="Send return&#xa;confirmation" vertex="1">
+          <mxGeometry height="40" width="40" x="1310" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="S_E2" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=end;symbol=general;strokeWidth=3;" value="End" vertex="1">
+          <mxGeometry height="40" width="40" x="1390" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="S_T6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Calculate the&#xa;fine amount" vertex="1">
+          <mxGeometry height="60" width="100" x="1310" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="S_Th4" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=throw;symbol=message;" value="Send fine&#xa;amount" vertex="1">
+          <mxGeometry height="40" width="40" x="1450" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="S_EBG1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=standard;symbol=event;" value="Wait for&#xa;response" vertex="1">
+          <mxGeometry height="40" width="40" x="1550" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="S_C1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=catch;symbol=message;" value="Catch &#39;keep&#xa;unpaid&#39;" vertex="1">
+          <mxGeometry height="40" width="40" x="1710" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="S_T7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Keep fine unpaid,&#xa;block checkouts" vertex="1">
+          <mxGeometry height="60" width="110" x="1810" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="S_Th9" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=throw;symbol=message;" value="Send return&#xa;confirmation" vertex="1">
+          <mxGeometry height="40" width="40" x="1980" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="S_E5" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=end;symbol=general;strokeWidth=3;" value="End" vertex="1">
+          <mxGeometry height="40" width="40" x="2060" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="S_C2" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=catch;symbol=message;" value="Catch &#39;charge&#xa;request&#39;" vertex="1">
+          <mxGeometry height="40" width="40" x="1710" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="S_Th5" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=throw;symbol=message;" value="Send charge req&#xa;to Gateway" vertex="1">
+          <mxGeometry height="40" width="40" x="1810" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="S_EBG2" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=standard;symbol=event;" value="Wait for&#xa;Auth" vertex="1">
+          <mxGeometry height="40" width="40" x="1910" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="S_C3" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=catch;symbol=message;" value="Catch&#xa;&#39;Authorised&#39;" vertex="1">
+          <mxGeometry height="40" width="40" x="2070" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="S_T8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Mark the fine&#xa;as paid" vertex="1">
+          <mxGeometry height="60" width="100" x="2150" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="S_Th6" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=throw;symbol=message;" value="Send payment&#xa;confirmation" vertex="1">
+          <mxGeometry height="40" width="40" x="2310" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="S_Th7" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=throw;symbol=message;" value="Send return&#xa;confirmation" vertex="1">
+          <mxGeometry height="40" width="40" x="2410" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="S_E3" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=end;symbol=general;strokeWidth=3;" value="End" vertex="1">
+          <mxGeometry height="40" width="40" x="2490" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="S_C4" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=catch;symbol=message;" value="Catch&#xa;&#39;Declined&#39;" vertex="1">
+          <mxGeometry height="40" width="40" x="2070" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="S_Th8" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=throw;symbol=message;" value="Send decline&#xa;reason" vertex="1">
+          <mxGeometry height="40" width="40" x="2170" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="S_E4" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=end;symbol=general;strokeWidth=3;" value="End" vertex="1">
+          <mxGeometry height="40" width="40" x="2250" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="B_S1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=standard;symbol=message;strokeWidth=1.5;" value="Receive hold&#xa;notification" vertex="1">
+          <mxGeometry height="40" width="40" x="1110" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="B_E1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=end;symbol=general;strokeWidth=3;" value="End" vertex="1">
+          <mxGeometry height="40" width="40" x="1190" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="B_S2" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=standard;symbol=message;strokeWidth=1.5;" value="Receive fine&#xa;amount" vertex="1">
+          <mxGeometry height="40" width="40" x="1450" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="B_T1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="View the fine&#xa;amount" vertex="1">
+          <mxGeometry height="60" width="90" x="1510" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="B_G1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=standard;symbol=exclusive;" value="Pay now?" vertex="1">
+          <mxGeometry height="40" width="40" x="1630" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="B_Th1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=throw;symbol=message;" value="Send &#39;keep&#xa;unpaid&#39;" vertex="1">
+          <mxGeometry height="40" width="40" x="1710" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="B_E2" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=end;symbol=general;strokeWidth=3;" value="End" vertex="1">
+          <mxGeometry height="40" width="40" x="1790" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="B_Th2" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=throw;symbol=message;" value="Send &#39;charge&#xa;request&#39;" vertex="1">
+          <mxGeometry height="40" width="40" x="1710" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="B_EBG" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=standard;symbol=event;" value="Wait for&#xa;receipt" vertex="1">
+          <mxGeometry height="40" width="40" x="1810" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="B_C1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=catch;symbol=message;" value="Receive payment&#xa;confirmation" vertex="1">
+          <mxGeometry height="40" width="40" x="2310" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="B_E3" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=end;symbol=general;strokeWidth=3;" value="End" vertex="1">
+          <mxGeometry height="40" width="40" x="2390" y="760" as="geometry" />
+        </mxCell>
+        <mxCell id="B_C2" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=catch;symbol=message;" value="Receive decline&#xa;reason" vertex="1">
+          <mxGeometry height="40" width="40" x="2170" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="B_E4" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=end;symbol=general;strokeWidth=3;" value="End" vertex="1">
+          <mxGeometry height="40" width="40" x="2250" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="P_S1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=standard;symbol=message;strokeWidth=1.5;" value="Receive charge&#xa;request" vertex="1">
+          <mxGeometry height="40" width="40" x="1810" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="P_T1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=20;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontSize=12;" value="Authorise or&#xa;decline payment" vertex="1">
+          <mxGeometry height="60" width="100" x="1880" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="P_G1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=rhombusPerimeter;outlineConnect=0;outline=standard;symbol=exclusive;" value="Authorised?" vertex="1">
+          <mxGeometry height="40" width="40" x="2010" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="P_Th1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=throw;symbol=message;" value="Send&#xa;&#39;Authorised&#39;" vertex="1">
+          <mxGeometry height="40" width="40" x="2070" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="P_E1" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=end;symbol=general;strokeWidth=3;" value="End" vertex="1">
+          <mxGeometry height="40" width="40" x="2150" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="P_Th2" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=throw;symbol=message;" value="Send&#xa;&#39;Declined&#39;" vertex="1">
+          <mxGeometry height="40" width="40" x="2070" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="P_E2" parent="1" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;outline=end;symbol=general;strokeWidth=3;" value="End" vertex="1">
+          <mxGeometry height="40" width="40" x="2150" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_l1" edge="1" parent="1" source="L_S1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="L_T1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_l2" edge="1" parent="1" source="L_T1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="L_EBG">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_l3" edge="1" parent="1" source="L_EBG" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="L_C1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_l4" edge="1" parent="1" source="L_C1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="L_E1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_l5" edge="1" parent="1" source="L_EBG" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="L_C2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_l6" edge="1" parent="1" source="L_C2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="L_E2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_l7" edge="1" parent="1" source="L_EBG" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="L_C4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="45" />
+              <mxPoint x="1940" y="45" />
+              <mxPoint x="1940" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sf_l8" edge="1" parent="1" source="L_C4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="L_E4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_l9" edge="1" parent="1" source="L_EBG" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="L_C3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="380" y="45" />
+              <mxPoint x="2380" y="45" />
+              <mxPoint x="2380" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sf_l10" edge="1" parent="1" source="L_C3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="L_E3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s1" edge="1" parent="1" source="S_S1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_G1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s2" edge="1" parent="1" source="S_G1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_T1" value="no">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s3" edge="1" parent="1" source="S_T1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_Th1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s4" edge="1" parent="1" source="S_Th1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_E1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s5" edge="1" parent="1" source="S_G1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_T2" value="yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s6" edge="1" parent="1" source="S_T2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_F1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s7" edge="1" parent="1" source="S_F1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_T3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s8" edge="1" parent="1" source="S_F1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_T4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s9" edge="1" parent="1" source="S_T3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_F2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s10" edge="1" parent="1" source="S_T4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_F2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s11" edge="1" parent="1" source="S_F2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_G2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s12" edge="1" parent="1" source="S_G2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_T5" value="yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s13" edge="1" parent="1" source="S_T5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_Th2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s14" edge="1" parent="1" source="S_G2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_G3" value="no">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="440" />
+              <mxPoint x="1230" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sf_s15" edge="1" parent="1" source="S_Th2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_G3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s16" edge="1" parent="1" source="S_G3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_Th3" value="no">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s17" edge="1" parent="1" source="S_Th3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_E2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s18" edge="1" parent="1" source="S_G3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_T6" value="yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s19" edge="1" parent="1" source="S_T6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_Th4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s20" edge="1" parent="1" source="S_Th4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_EBG1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s21" edge="1" parent="1" source="S_EBG1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_C1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s22" edge="1" parent="1" source="S_C1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_T7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s23" edge="1" parent="1" source="S_T7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_Th9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s24" edge="1" parent="1" source="S_Th9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_E5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s25" edge="1" parent="1" source="S_EBG1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_C2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s26" edge="1" parent="1" source="S_C2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_Th5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s27" edge="1" parent="1" source="S_Th5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_EBG2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s28" edge="1" parent="1" source="S_EBG2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_C3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s29" edge="1" parent="1" source="S_C3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_T8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s30" edge="1" parent="1" source="S_T8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_Th6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s31" edge="1" parent="1" source="S_Th6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_Th7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s32" edge="1" parent="1" source="S_Th7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_E3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s33" edge="1" parent="1" source="S_EBG2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_C4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s34" edge="1" parent="1" source="S_C4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_Th8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_s35" edge="1" parent="1" source="S_Th8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="S_E4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_b1" edge="1" parent="1" source="B_S1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="B_E1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_b2" edge="1" parent="1" source="B_S2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="B_T1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_b3" edge="1" parent="1" source="B_T1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="B_G1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_b4" edge="1" parent="1" source="B_G1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="B_Th1" value="no">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_b5" edge="1" parent="1" source="B_Th1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="B_E2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_b6" edge="1" parent="1" source="B_G1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="B_Th2" value="yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_b7" edge="1" parent="1" source="B_Th2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="B_EBG">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_b8" edge="1" parent="1" source="B_EBG" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="B_C1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_b9" edge="1" parent="1" source="B_C1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="B_E3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_b10" edge="1" parent="1" source="B_EBG" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="B_C2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_b11" edge="1" parent="1" source="B_C2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="B_E4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_p1" edge="1" parent="1" source="P_S1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="P_T1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_p2" edge="1" parent="1" source="P_T1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="P_G1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_p3" edge="1" parent="1" source="P_G1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="P_Th1" value="yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_p4" edge="1" parent="1" source="P_Th1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="P_E1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_p5" edge="1" parent="1" source="P_G1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="P_Th2" value="no">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sf_p6" edge="1" parent="1" source="P_Th2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#333333;" target="P_E2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mf1" edge="1" parent="1" source="L_T1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 2;endArrow=block;endFill=0;strokeColor=#333333;" target="S_S1" value="copy barcode">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mf2" edge="1" parent="1" source="S_Th1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 2;endArrow=block;endFill=0;strokeColor=#333333;" target="L_C1" value="no active loan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mf3" edge="1" parent="1" source="S_Th2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 2;endArrow=block;endFill=0;strokeColor=#333333;" target="B_S1" value="hold notification">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mf4" edge="1" parent="1" source="S_Th3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 2;endArrow=block;endFill=0;strokeColor=#333333;" target="L_C2" value="return confirmation">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mf5" edge="1" parent="1" source="S_Th4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 2;endArrow=block;endFill=0;strokeColor=#333333;" target="B_S2" value="fine amount">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mf6" edge="1" parent="1" source="B_Th1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 2;endArrow=block;endFill=0;strokeColor=#333333;" target="S_C1" value="keep unpaid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mf7" edge="1" parent="1" source="B_Th2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 2;endArrow=block;endFill=0;strokeColor=#333333;" target="S_C2" value="charge request">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mf8" edge="1" parent="1" source="S_Th5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 2;endArrow=block;endFill=0;strokeColor=#333333;" target="P_S1" value="charge request">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mf9" edge="1" parent="1" source="P_Th1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 2;endArrow=block;endFill=0;strokeColor=#333333;" target="S_C3" value="Authorised">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mf10" edge="1" parent="1" source="P_Th2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 2;endArrow=block;endFill=0;strokeColor=#333333;" target="S_C4" value="Declined">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mf11" edge="1" parent="1" source="S_Th6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 2;endArrow=block;endFill=0;strokeColor=#333333;" target="B_C1" value="payment conf">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mf12" edge="1" parent="1" source="S_Th8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 2;endArrow=block;endFill=0;strokeColor=#333333;" target="B_C2" value="decline reason">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mf13" edge="1" parent="1" source="S_Th9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 2;endArrow=block;endFill=0;strokeColor=#333333;" target="L_C4" value="return confirmation">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mf14" edge="1" parent="1" source="S_Th7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;dashed=1;dashPattern=1 2;endArrow=block;endFill=0;strokeColor=#333333;" target="L_C3" value="return confirmation">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
